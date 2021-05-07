@@ -13,5 +13,13 @@ feature 'entering details' do
       fill_in :birthday, with: '10/02/1970'
       click_button 'Submit'
     end
+
+    scenario 'a user can text on the greetings page' do
+      visit('/')
+      fill_in :name, with: 'Ogonna Okafor'
+      fill_in :birthday, with: '10/02/1970'
+      click_button 'Submit'
+      expect(page).to have_content "Hello Ogonna Okafor"
+    end
   end
   
