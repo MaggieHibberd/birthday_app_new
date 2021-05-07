@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/Desktop/Dev/Makers/maggie/birthday_app_new/app.rb": {
+      "/Users/maggiehibberd/birthday_app_new/app.rb": {
         "lines": [
           1,
           1,
@@ -25,7 +25,20 @@
           null
         ]
       },
-      "/Users/student/Desktop/Dev/Makers/maggie/birthday_app_new/spec/birthday_card_spec.rb": {
+      "/Users/maggiehibberd/birthday_app_new/spec/birthday_card_spec.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/maggiehibberd/birthday_app_new/lib/birthday_card.rb": {
         "lines": [
           1,
           null,
@@ -37,16 +50,7 @@
           null
         ]
       },
-      "/Users/student/Desktop/Dev/Makers/maggie/birthday_app_new/lib/birthday_card.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/student/Desktop/Dev/Makers/maggie/birthday_app_new/spec/features/sign_in_spec.rb": {
+      "/Users/maggiehibberd/birthday_app_new/spec/features/sign_in_spec.rb": {
         "lines": [
           1,
           1,
@@ -76,6 +80,6 @@
         ]
       }
     },
-    "timestamp": 1620379623
+    "timestamp": 1620396617
   }
 }

@@ -2,7 +2,7 @@ require 'date'
 
 class Birthday_Card
   def confirmation(date)
-    true
-    current_date = Date.strptime(date, ‘%d/%m/%y’)
+    date_obj = Date.strptime(date,'%d/%m/%Y')
+    date_obj == Date.today
   end
 end
