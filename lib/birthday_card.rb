@@ -5,4 +5,4 @@ class Birthday_Card
     true
     current_date = Date.strptime(date, ‘%d/%m/%y’)
   end
-endrd
+end
