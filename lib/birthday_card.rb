@@ -1,4 +1,5 @@
 class Birthday_Card
-  def confirmation
+  def confirmation(date)
+    true
   end
 end
