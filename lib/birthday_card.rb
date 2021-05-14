@@ -10,11 +10,6 @@ class Birthday_Card
   end
 
   def confirmation?
-    # date_obj = Date.strptime(@birthday, '%d/%m')
-
-    # date_obj == Time.now.strftime('%d/%m')
-
-    Time.parse(birthday).strftime('%d/%m') == Time.now.strftime('%d/%m')
-   
+    Time.parse(birthday).strftime('%d/%m') == Time.now.strftime('%d/%m')   
   end
 end

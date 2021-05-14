@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/maggiehibberd/birthday_app_new/app.rb": {
+      "/Users/student/Desktop/Dev/Makers/maggie/birthday_app_new/app.rb": {
         "lines": [
           1,
           1,
@@ -15,16 +15,16 @@
           1,
           null,
           1,
+          4,
+          null,
+          null,
+          1,
           3,
-          null,
+          3,
+          3,
+          2,
           null,
           1,
-          2,
-          2,
-          2,
-          2,
-          null,
-          0,
           null,
           null,
           null,
@@ -35,14 +35,14 @@
           null,
           null,
           1,
-          0,
-          0,
+          1,
+          1,
           null,
           null,
           null
         ]
       },
-      "/Users/maggiehibberd/birthday_app_new/lib/birthday_card.rb": {
+      "/Users/student/Desktop/Dev/Makers/maggie/birthday_app_new/lib/birthday_card.rb": {
         "lines": [
           1,
           null,
@@ -51,22 +51,17 @@
           1,
           null,
           1,
-          3,
-          3,
+          4,
+          4,
           null,
           null,
           1,
-          null,
-          null,
-          null,
-          null,
-          3,
-          null,
+          4,
           null,
           null
         ]
       },
-      "/Users/maggiehibberd/birthday_app_new/spec/birthday_card_spec.rb": {
+      "/Users/student/Desktop/Dev/Makers/maggie/birthday_app_new/spec/birthday_card_spec.rb": {
         "lines": [
           1,
           null,
@@ -78,7 +73,20 @@
           null
         ]
       },
-      "/Users/maggiehibberd/birthday_app_new/spec/features/its_your_birthday_spec.rb": {
+      "/Users/student/Desktop/Dev/Makers/maggie/birthday_app_new/spec/features/future_birthday_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/student/Desktop/Dev/Makers/maggie/birthday_app_new/spec/features/its_your_birthday_spec.rb": {
         "lines": [
           1,
           1,
@@ -92,7 +100,7 @@
           null
         ]
       },
-      "/Users/maggiehibberd/birthday_app_new/spec/features/sign_in_spec.rb": {
+      "/Users/student/Desktop/Dev/Makers/maggie/birthday_app_new/spec/features/sign_in_spec.rb": {
         "lines": [
           1,
           1,
@@ -111,6 +119,6 @@
         ]
       }
     },
-    "timestamp": 1620646330
+    "timestamp": 1620981465
   }
 }
