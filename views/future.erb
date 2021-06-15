@@ -1,1 +1,17 @@
-Your birthday is in <%= @birthday_card.days_till_birthday %> number of days
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="center-form">
+<% if  @birthday_card.days_till_birthday == 1 %>
+ <h1> <%= @birthday_card.name %> your birthday is in <%= @birthday_card.days_till_birthday %>  day </h1>
+<% elsif %>
+ <h1> <%= @birthday_card.name %> your birthday is in <%= @birthday_card.days_till_birthday %>  days </h1>
+  <%end%>
+
+</body>
+</html>
