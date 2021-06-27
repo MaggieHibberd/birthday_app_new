@@ -12,4 +12,4 @@ Birthday calculator app written in Ruby and using html and css
  - open browser address http://localhost:9292/
 
  ## Technical
- Tech & Frameworks utilised Ruby, HTML, CSS,  Rspec, Rubocop, Simplecov All classes isolated with 92% test coverage
+ Tech & Frameworks utilised Ruby, HTML, CSS,  Rspec, Rubocop, Simplecov All classes isolated with 96.7% test coverage

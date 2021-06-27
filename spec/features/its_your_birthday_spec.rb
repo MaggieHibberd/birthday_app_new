@@ -6,6 +6,5 @@ feature 'It is the users birthday and they see a message' do
     fill_in :birthday, with: todays_date
     click_button 'Submit'
     expect(page).to have_content 'Hello Ogonna Okafor'
-  end 
+  end
 end
-

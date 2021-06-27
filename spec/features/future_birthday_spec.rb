@@ -5,6 +5,6 @@ feature "it is not the user's birthday" do
     fill_in :name, with: 'Ogonna Okafor'
     fill_in :birthday, with: test_date
     click_button 'Submit'
-    expect(page).to have_content 'Your birthday is in 5 number of days'
+    expect(page).to have_content 'Ogonna Okafor your birthday is in 5 days'
   end
 end
