@@ -17,7 +17,7 @@ post '/greetings' do
   @name = params[:name]
   session[:birthday_card] = BirthdayCard.new(params[:birthday], params[:name])
   if session[:birthday_card].confirmation?
-     redirect '/greetings'
+    redirect '/greetings'
   else
     redirect '/future'
   end 
