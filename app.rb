@@ -25,6 +25,7 @@ if Date.parse(params[:birthday]).instance_of?(Date)
   end
 else
   flash[:notice] = 'Put your birthday in the correct format!'
+  redirect '/'
 end
 end
 
