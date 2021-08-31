@@ -23,7 +23,7 @@ Approach:
  
     - Broke the task down into clear user stories
     - Set up MVC folders
-    - Starting with intial index page and working through user journey
+    - Starting with initial index page and working through user journeys
     - Used TDD (red, green, refactor) to work through each story  
     - Started with feature tests and broke these down into more     focused unit tests
 
@@ -38,6 +38,8 @@ Birthday in the future
 ![future_birthday](./public/images/future_birthday.png)
 Birthday greeting
 ![today_birthday](./public/images/today_birthday.png)
+Flash message when date format entered incorrectly 
+![flash_message](./public/images/flash_message.png)
 
 ## Instructions
  - Clone the repo
