@@ -1,11 +1,11 @@
 # Birthday App
 ==============
 
-## Challenge:
+## Project Outline:
 
 Birthday calculator app written in Ruby and using html and css
 
-Challenge is to build a web app that will ask the user for a name and birthday.
+Web app that will ask the user for a name and birthday
 
 When the user submits the form, and depending on the current date, the app will either:
 
@@ -17,6 +17,17 @@ When the user submits the form, and depending on the current date, the app will 
 As a user, if my birthday is today I want the app to wish me a happy birthday
 
 As a user, if my birthday is not today I want the app to tell me how many days it is until my birthday
+
+## Process
+Approach:
+
+***********
+    - Broke the task down into clear user stories
+    - Set up MVC folders
+    - Starting with intial index page 
+    - Used TDD (red, green, refactor) to work through each story  
+    - Started with feature tests and broke these down into more     focused unit tests
+***********
 
 ## Domain Model:
 ![MVC](./public/images/MVC.png)
@@ -39,4 +50,4 @@ Birthday greeting
  - open browser address http://localhost:9292/
 
 ## Technical
- Tech & Frameworks utilised Ruby, HTML, CSS,  Rspec, Simplecov, Rubocop. All classes isolated with 96.7% test coverage
+ Tech & Frameworks utilised Ruby, HTML, CSS,  Rspec, Simplecov, Sinatra and Rubocop. All classes isolated with 96.7% test coverage
