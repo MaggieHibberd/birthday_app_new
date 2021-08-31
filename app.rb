@@ -16,9 +16,9 @@ end
 
 post '/greetings' do 
 begin
-    date = Date.parse(params[:birthday])
+    date = (params[:birthday])
     date.is_a?(DateTime) ? date : DateTime.parse(date)
-    @name = params[:name]
+      @name = params[:name]
       session[:birthday_card] = BirthdayCard.new(params[:birthday], params[:name])
       if session[:birthday_card].confirmation?
       redirect '/greetings'
@@ -26,8 +26,8 @@ begin
       redirect '/future'
       end
 rescue ArgumentError
-  flash[:notice] = 'Put your birthday in the correct format!'
-  redirect '/'
+  flash[:notice] = 'Enter your birthday in the correct format!'
+  redirect_to '/'
 end
 end
 

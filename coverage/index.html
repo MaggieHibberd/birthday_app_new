@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-08-31T16:50:20+01:00">2021-08-31T16:50:20+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-08-31T17:01:31+01:00">2021-08-31T17:01:31+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,7 +23,7 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="yellow">
-  86.32%
+  85.57%
 </span>
 
      </span>
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>95</b> relevant lines,
-    <span class="green"><b>82</b> lines covered</span> and
-    <span class="red"><b>13</b> lines missed. </span>
+    <b>97</b> relevant lines,
+    <span class="green"><b>83</b> lines covered</span> and
+    <span class="red"><b>14</b> lines missed. </span>
     (<span class="yellow">
-  86.32%
+  85.57%
 </span>
 )
   </div>
@@ -72,12 +72,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#c5ab99f1b7f242952f528996d7cafbf744eb5734" class="src_link" title="app.rb">app.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">60.00 %</td>
-            <td class="cell--number">58</td>
-            <td class="cell--number">25</td>
-            <td class="cell--number">15</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">0.88</td>
+            <td class="red strong cell--number t-file__coverage">59.26 %</td>
+            <td class="cell--number">60</td>
+            <td class="cell--number">27</td>
+            <td class="cell--number">16</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">0.93</td>
             
           </tr>
         
@@ -158,7 +158,7 @@
     <h3>app.rb</h3>
     <h4>
       <span class="red">
-  60.0%
+  59.26%
 </span>
 
       lines covered
@@ -167,9 +167,9 @@
     
 
     <div class="t-line-summary">
-      <b>25</b> relevant lines.
-      <span class="green"><b>15</b> lines covered</span> and
-      <span class="red"><b>10</b> lines missed.</span>
+      <b>27</b> relevant lines.
+      <span class="green"><b>16</b> lines covered</span> and
+      <span class="red"><b>11</b> lines missed.</span>
     </div>
 
     
@@ -395,18 +395,18 @@
 
             
 
-            <code class="ruby">    date.is_a?(DateTime) ? date : DateTime.parse(date)</code>
+            <code class="ruby">    p (params[:birthday])</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="21">
-            
-            
-
+          <li class="covered" data-hits="3" data-linenumber="21">
+            <span class="hits">3</span>
             
 
-            <code class="ruby">    @name = params[:name]</code>
+            
+
+            <code class="ruby">    date.is_a?(DateTime) ? date : DateTime.parse(date)</code>
           </li>
         </div>
       
@@ -417,7 +417,7 @@
 
             
 
-            <code class="ruby">      session[:birthday_card] = BirthdayCard.new(params[:birthday], params[:name])</code>
+            <code class="ruby">      @name = params[:name]</code>
           </li>
         </div>
       
@@ -428,7 +428,7 @@
 
             
 
-            <code class="ruby">      if session[:birthday_card].confirmation?</code>
+            <code class="ruby">      session[:birthday_card] = BirthdayCard.new(params[:birthday], params[:name])</code>
           </li>
         </div>
       
@@ -439,12 +439,23 @@
 
             
 
+            <code class="ruby">      if session[:birthday_card].confirmation?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="25">
+            
+            
+
+            
+
             <code class="ruby">      redirect &#39;/greetings&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="25">
+          <li class="never" data-hits="" data-linenumber="26">
             
             
 
@@ -455,7 +466,7 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="26">
+          <li class="missed" data-hits="0" data-linenumber="27">
             
             
 
@@ -466,7 +477,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="27">
+          <li class="never" data-hits="" data-linenumber="28">
             
             
 
@@ -477,7 +488,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="28">
+          <li class="never" data-hits="" data-linenumber="29">
             
             
 
@@ -488,7 +499,7 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="29">
+          <li class="missed" data-hits="0" data-linenumber="30">
             
             
 
@@ -499,24 +510,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="30">
+          <li class="missed" data-hits="0" data-linenumber="31">
             
             
 
             
 
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="31">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
+            <code class="ruby">  redirect &#39;/&#39;</code>
           </li>
         </div>
       
@@ -527,7 +527,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">end</code>
           </li>
         </div>
       
@@ -538,7 +538,7 @@
 
             
 
-            <code class="ruby"># if Date.parse(params[:birthday]).instance_of?(Date)</code>
+            <code class="ruby">end</code>
           </li>
         </div>
       
@@ -549,7 +549,7 @@
 
             
 
-            <code class="ruby">#   @name = params[:name]</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -560,7 +560,7 @@
 
             
 
-            <code class="ruby">#   session[:birthday_card] = BirthdayCard.new(params[:birthday], params[:name])</code>
+            <code class="ruby"># if Date.parse(params[:birthday]).instance_of?(Date)</code>
           </li>
         </div>
       
@@ -571,7 +571,7 @@
 
             
 
-            <code class="ruby">#   if session[:birthday_card].confirmation?</code>
+            <code class="ruby">#   @name = params[:name]</code>
           </li>
         </div>
       
@@ -582,7 +582,7 @@
 
             
 
-            <code class="ruby">#     redirect &#39;/greetings&#39;</code>
+            <code class="ruby">#   session[:birthday_card] = BirthdayCard.new(params[:birthday], params[:name])</code>
           </li>
         </div>
       
@@ -593,7 +593,7 @@
 
             
 
-            <code class="ruby">#   else</code>
+            <code class="ruby">#   if session[:birthday_card].confirmation?</code>
           </li>
         </div>
       
@@ -604,7 +604,7 @@
 
             
 
-            <code class="ruby">#     redirect &#39;/future&#39;</code>
+            <code class="ruby">#     redirect &#39;/greetings&#39;</code>
           </li>
         </div>
       
@@ -615,7 +615,7 @@
 
             
 
-            <code class="ruby">#   end</code>
+            <code class="ruby">#   else</code>
           </li>
         </div>
       
@@ -626,7 +626,7 @@
 
             
 
-            <code class="ruby"># else</code>
+            <code class="ruby">#     redirect &#39;/future&#39;</code>
           </li>
         </div>
       
@@ -637,7 +637,7 @@
 
             
 
-            <code class="ruby">#   flash[:notice] = &#39;Put your birthday in the correct format!&#39;</code>
+            <code class="ruby">#   end</code>
           </li>
         </div>
       
@@ -648,7 +648,7 @@
 
             
 
-            <code class="ruby">#   redirect &#39;/&#39;</code>
+            <code class="ruby"># else</code>
           </li>
         </div>
       
@@ -659,7 +659,7 @@
 
             
 
-            <code class="ruby"># end</code>
+            <code class="ruby">#   flash[:notice] = &#39;Put your birthday in the correct format!&#39;</code>
           </li>
         </div>
       
@@ -670,7 +670,7 @@
 
             
 
-            <code class="ruby"># end</code>
+            <code class="ruby">#   redirect &#39;/&#39;</code>
           </li>
         </div>
       
@@ -681,12 +681,34 @@
 
             
 
+            <code class="ruby"># end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="47">
+            
+            
+
+            
+
+            <code class="ruby"># end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="48">
+            
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="47">
+          <li class="covered" data-hits="1" data-linenumber="49">
             <span class="hits">1</span>
             
 
@@ -697,7 +719,7 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="48">
+          <li class="missed" data-hits="0" data-linenumber="50">
             
             
 
@@ -708,7 +730,7 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="49">
+          <li class="missed" data-hits="0" data-linenumber="51">
             
             
 
@@ -719,7 +741,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="50">
+          <li class="never" data-hits="" data-linenumber="52">
             
             
 
@@ -730,7 +752,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="51">
+          <li class="never" data-hits="" data-linenumber="53">
             
             
 
@@ -741,7 +763,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="52">
+          <li class="never" data-hits="" data-linenumber="54">
             
             
 
@@ -752,7 +774,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="53">
+          <li class="covered" data-hits="1" data-linenumber="55">
             <span class="hits">1</span>
             
 
@@ -763,7 +785,7 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="54">
+          <li class="missed" data-hits="0" data-linenumber="56">
             
             
 
@@ -774,7 +796,7 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="55">
+          <li class="missed" data-hits="0" data-linenumber="57">
             
             
 
@@ -785,7 +807,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="56">
+          <li class="never" data-hits="" data-linenumber="58">
             
             
 
@@ -796,7 +818,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="57">
+          <li class="never" data-hits="" data-linenumber="59">
             
             
 
@@ -807,7 +829,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="58">
+          <li class="never" data-hits="" data-linenumber="60">
             
             
 
