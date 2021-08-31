@@ -27,7 +27,7 @@ begin
       end
 rescue ArgumentError
   flash[:notice] = 'Enter your birthday in the correct format!'
-  redirect_to '/'
+  redirect '/'
 end
 end
 
