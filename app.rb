@@ -26,7 +26,7 @@ begin
       redirect '/future'
       end
 rescue ArgumentError
-  flash.now[:notice] = 'Enter your birthday in the correct format!'
+  flash[:notice] = '**!!PLEASE ENTER YOUR BIRTHDAY IN THE CORRECT FORMAT!!**'
   redirect '/'
 end
 end
