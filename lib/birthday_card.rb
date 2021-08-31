@@ -5,7 +5,7 @@ class BirthdayCard
   attr_reader :birthday, :name
 
   def initialize(birthday, name)
-    @birthday = Date.parse(birthday).yday 
+    @birthday = Date.parse(birthday).yday
     @name = name
     @todays_date = Date.today.yday
   end

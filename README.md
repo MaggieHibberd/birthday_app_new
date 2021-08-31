@@ -49,4 +49,4 @@ Birthday greeting
  - open browser address http://localhost:9292/
 
 ## Technical
- Tech & Frameworks utilised Ruby, HTML, CSS,  Rspec, Simplecov, Sinatra and Rubocop. All classes isolated with 94.79% test coverage
+ Tech & Frameworks utilised Ruby, HTML, CSS,  Rspec, Simplecov, Sinatra and Rubocop. All classes isolated with 100% test coverage
