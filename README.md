@@ -23,9 +23,9 @@ Approach:
  
     - Broke the task down into clear user stories
     - Set up MVC folders
-    - Starting with initial index page and working through user journeys
+    - Started with initial index page and working through user journeys
     - Used TDD (red, green, refactor) to work through each story  
-    - Started with feature tests and broke these down into more     focused unit tests
+    - Started with feature tests and broke these down into more focused unit tests
 
 ## Domain Model:
 ![MVC](./public/images/MVC.png)
