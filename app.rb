@@ -5,7 +5,7 @@ require './lib/birthday_card'
 
 class Birthday < Sinatra::Base
   configure :development do
-    register Sinatra::Reloader
+    register Sinatra::Flash
   end
 
 enable :sessions
