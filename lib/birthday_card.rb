@@ -17,8 +17,8 @@ class BirthdayCard
 
   def days_till_birthday
     today_date = Time.now.strftime('%d/%m/%Y')
-    pp birthday_this_year = @birthday[0...6] + today_date[6...10]
-    pp new_birthday = @birthday[0...6] + (Time.now + 365 * 86400).strftime('%Y')
+    birthday_this_year = @birthday[0...6] + today_date[6...10]
+    new_birthday = @birthday[0...6] + (Time.now + 365 * 86400).strftime('%Y')
  
     if @birthday[3..4] >= today_date[3..4] && @birthday[0..1] >= today_date[0..1]
       Date.parse(birthday_this_year).mjd - Date.parse(today_date).mjd
