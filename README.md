@@ -20,14 +20,12 @@ As a user, if my birthday is not today I want the app to tell me how many days i
 
 ## Process
 Approach:
-
-***********
+ 
     - Broke the task down into clear user stories
     - Set up MVC folders
-    - Starting with intial index page 
+    - Starting with intial index page and working through user journey
     - Used TDD (red, green, refactor) to work through each story  
     - Started with feature tests and broke these down into more     focused unit tests
-***********
 
 ## Domain Model:
 ![MVC](./public/images/MVC.png)
