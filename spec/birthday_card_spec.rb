@@ -4,11 +4,11 @@ describe 'Birthday_Card' do
   it 'will confirm whether your birthday is today' do
     todays_date = Time.now.strftime('%d/%m/%Y')
     birthday = BirthdayCard.new("#{todays_date}", 'Ogonna Okafor' )
-    expect(birthday.confirmation?).to eq true
+    expect(birthday.today?).to eq true
   end
   it 'will return false confirming the user birthday is not today for a future date' do
     test_date = (Time.now + 5 * 86400).strftime('%d/%m/%Y')
-    expect(BirthdayCard.new(test_date, 'Ogonna Okafor').confirmation?).to eq false
+    expect(BirthdayCard.new(test_date, 'Ogonna Okafor').today?).to eq false
   end
   it 'will tell you how many days untill your birthday this year' do
     test_date = (Time.now + 5 * 86400).strftime('%d/%m/%Y')
@@ -17,7 +17,7 @@ describe 'Birthday_Card' do
   end
   it 'will return false confirming the user birthday is not today for a past date' do
     test_date = (Time.now - 5 * 86400).strftime('%d/%m/%Y')
-    expect(BirthdayCard.new(test_date, 'Ogonna Okafor').confirmation?).to eq false
+    expect(BirthdayCard.new(test_date, 'Ogonna Okafor').today?).to eq false
   end
   it ' will tell you how many days untill your birthday in a future year' do
     test_date = (Time.now - 5 * 86400).strftime('%d/%m/%Y')

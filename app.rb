@@ -16,15 +16,15 @@ end
 
 post '/greetings' do 
 begin
-    date = (params[:birthday])
-    date.is_a?(DateTime) ? date : DateTime.parse(date)
-      @name = params[:name]
-      session[:birthday_card] = BirthdayCard.new(params[:birthday], params[:name])
-      if session[:birthday_card].confirmation?
+  date = (params[:birthday])
+  date.is_a?(DateTime) 
+  @name = params[:name]
+  session[:birthday_card] = BirthdayCard.new(params[:birthday], params[:name])
+    if session[:birthday_card].today?
       redirect '/greetings'
-      else
+    else
       redirect '/future'
-      end
+    end
 rescue ArgumentError
   flash[:notice] = '**!!PLEASE ENTER YOUR BIRTHDAY IN THE CORRECT FORMAT!!**'
   redirect '/'

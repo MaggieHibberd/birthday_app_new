@@ -10,7 +10,7 @@ class BirthdayCard
    @birthdate_reversed = @birthday.split('/').reverse.join('/')
   end
 
-  def confirmation?
+  def today?
     Time.parse(@birthdate_reversed).strftime('%d/%m/%Y')[0...6] ==
     Time.now.strftime('%d/%m/%Y')[0...6]
   end
