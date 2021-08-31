@@ -15,19 +15,34 @@ get '/' do
 end
 
 post '/greetings' do 
-if Date.parse(params[:birthday]).instance_of?(Date)
-  @name = params[:name]
-  session[:birthday_card] = BirthdayCard.new(params[:birthday], params[:name])
-  if session[:birthday_card].confirmation?
-    redirect '/greetings'
-  else
-    redirect '/future'
-  end
-else
+begin
+    date = Date.parse(params[:birthday])
+    date.is_a?(DateTime) ? date : DateTime.parse(date)
+    @name = params[:name]
+      session[:birthday_card] = BirthdayCard.new(params[:birthday], params[:name])
+      if session[:birthday_card].confirmation?
+      redirect '/greetings'
+      else
+      redirect '/future'
+      end
+rescue ArgumentError
   flash[:notice] = 'Put your birthday in the correct format!'
-  redirect '/'
 end
 end
+
+# if Date.parse(params[:birthday]).instance_of?(Date)
+#   @name = params[:name]
+#   session[:birthday_card] = BirthdayCard.new(params[:birthday], params[:name])
+#   if session[:birthday_card].confirmation?
+#     redirect '/greetings'
+#   else
+#     redirect '/future'
+#   end
+# else
+#   flash[:notice] = 'Put your birthday in the correct format!'
+#   redirect '/'
+# end
+# end
 
 get '/greetings' do 
   @birthday_card = session[:birthday_card]
