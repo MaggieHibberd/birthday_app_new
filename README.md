@@ -41,11 +41,12 @@ Birthday greeting
 
 ## Instructions
  - Clone the repo
- - run bundle
+ - Run: gem install rspec
+ - Run: bundle
 
 ## Run your local server
  - run rackup 
  - open browser address http://localhost:9292/
 
 ## Technical
- Tech & Frameworks utilised Ruby, HTML, CSS,  Rspec, Simplecov, Sinatra and Rubocop. All classes isolated with 96.7% test coverage
+ Tech & Frameworks utilised Ruby, HTML, CSS,  Rspec, Simplecov, Sinatra and Rubocop. All classes isolated with 94.79% test coverage
