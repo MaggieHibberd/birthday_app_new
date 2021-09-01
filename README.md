@@ -3,9 +3,9 @@
 
 ## Project Outline:
 
-Birthday calculator app written in Ruby and using html and css
-Web app that will ask the user for a name and birthday
-When the user submits the form, and depending on the current date, the app will either:
+- Birthday calculator app written in Ruby and using html and css
+- Web app that will ask the user for a name and birthday
+- When the user submits the form, and depending on the current date, the app will either:
 
     - wish the user happy birthday
     - tell them how long they'll have to wait until their next birthday
@@ -13,8 +13,8 @@ When the user submits the form, and depending on the current date, the app will 
 User information is stored in a database as part of the process
 
 ## User Stories:
-As a user, if my birthday is today I want the app to wish me a happy birthday
-As a user, if my birthday is not today I want the app to tell me how many days it is until my birthday
+- As a user, if my birthday is today I want the app to wish me a happy birthday
+- As a user, if my birthday is not today I want the app to tell me how many days it is until my birthday
 
 ## Process
 Approach:
