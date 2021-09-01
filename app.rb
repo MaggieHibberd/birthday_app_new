@@ -19,9 +19,10 @@ begin
   date = (params[:birthday])
   date.is_a?(DateTime) 
   @name = params[:name]
+  @name = params[:birthday]
 
   connection = PG.connect(dbname: 'birthdayapp')
-  connection.exec("INSERT INTO birthday_table (name, birthday) VALUES ('#{name}, #{birthday}')" )
+  connection.exec("INSERT INTO birthday_table (name, birthday) VALUES ('#{@name}, #{@birthday}')" )
   
 
   session[:birthday_card] = BirthdayCard.new(params[:birthday], params[:name])
