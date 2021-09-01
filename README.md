@@ -16,6 +16,9 @@ User information is stored in a database as part of the process
 - As a user, if my birthday is today I want the app to wish me a happy birthday
 - As a user, if my birthday is not today I want the app to tell me how many days it is until my birthday
 
+## Technical
+ Tech & Frameworks utilised Ruby, HTML, CSS, PostgreSQL, Rspec, Capybara, Simplecov, Sinatra and Rubocop. All classes isolated with 95% test coverage
+
 ## Process
 - Approach:
     - Broke the task down into clear user stories
@@ -54,9 +57,6 @@ Flash message when date format entered incorrectly
 ## Run your local server
  - run rackup 
  - open browser address http://localhost:9292/
-
-## Technical
- Tech & Frameworks utilised Ruby, HTML, CSS, PostgreSQL, Rspec, Capybara, Simplecov, Sinatra and Rubocop. All classes isolated with 95% test coverage
 
 ##  Updates to make
 - Create test environment for database
