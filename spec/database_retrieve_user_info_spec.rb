@@ -3,5 +3,4 @@ describe '.all' do
       birthday_card = BirthdayCard.all
       expect(birthday_card).to include "Gaara"
     end
-    
   end

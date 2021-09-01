@@ -21,11 +21,8 @@ begin
   @name = params[:name]
   @birthday = params[:birthday]
 
-
-
   connection = PG.connect(dbname: 'birthdayapp')
   connection.exec("INSERT INTO birthday_table (birthday_ID, name, birthday) VALUES (DEFAULT, '#{@name}', '#{@birthday}')")
-  
 
   session[:birthday_card] = BirthdayCard.new(params[:birthday], params[:name])
     if session[:birthday_card].today?

@@ -16,7 +16,7 @@ describe 'Birthday_Card' do
     expect(BirthdayCard.new("#{test_date}", 'Ogonna Okafor').days_till_birthday).to eq result
   end
   it 'will return false confirming the user birthday is not today for a past date' do
-    test_date = Date.today - 5
+    test_date = Date.today - 7300
     expect(BirthdayCard.new("#{test_date}", 'Ogonna Okafor').today?).to eq false
   end
   it ' will tell you how many days untill your birthday in a future year' do
