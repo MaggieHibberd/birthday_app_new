@@ -63,4 +63,4 @@ Flash message when date format entered incorrectly
 - Setup/connect Twilio and create new 'send greeting' page that enables user to send birthday message to friend
 
 ## Nice to have
-- API set up - informaation of news from year of birth
+- API set up - News from year of birth
