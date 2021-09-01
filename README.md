@@ -17,7 +17,7 @@ User information is stored in a database as part of the process
 - As a user, if my birthday is not today I want the app to tell me how many days it is until my birthday
 
 ## Process
-Approach:
+- Approach:
     - Broke the task down into clear user stories
     - Set up Ruby web project folders
     - Started with writing failing test for user journeys
