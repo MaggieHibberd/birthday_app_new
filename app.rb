@@ -19,6 +19,11 @@ begin
   date = (params[:birthday])
   date.is_a?(DateTime) 
   @name = params[:name]
+
+  connection = PG.connect(dbname: 'birthdayapp')
+  connection.exec("INSERT INTO birthday_table (name, birthday) VALUES ('#{name}, #{birthday}')" )
+  
+
   session[:birthday_card] = BirthdayCard.new(params[:birthday], params[:name])
     if session[:birthday_card].today?
       redirect '/greetings'
@@ -30,20 +35,6 @@ rescue ArgumentError
   redirect '/'
 end
 end
-
-# if Date.parse(params[:birthday]).instance_of?(Date)
-#   @name = params[:name]
-#   session[:birthday_card] = BirthdayCard.new(params[:birthday], params[:name])
-#   if session[:birthday_card].confirmation?
-#     redirect '/greetings'
-#   else
-#     redirect '/future'
-#   end
-# else
-#   flash[:notice] = 'Put your birthday in the correct format!'
-#   redirect '/'
-# end
-# end
 
 get '/greetings' do 
   @birthday_card = session[:birthday_card]
