@@ -19,7 +19,7 @@ begin
   date = (params[:birthday])
   date.is_a?(DateTime) 
   @name = params[:name]
-  @name = params[:birthday]
+  @birthday = params[:birthday]
 
 
 
